@@ -1,6 +1,8 @@
 # Atlassian Dark Mode (Jira Cloud and Confluence Cloud)
 Dark mode for Jira Cloud and Confluence Cloud
 
+Confluence is still a work in progress. 
+
 Original Code from: https://github.com/aalvarado/JiraDarkTheme
 
 This is a heavily modified version of the link above.
