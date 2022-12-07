@@ -1,4 +1,4 @@
-# AtlassianDarkMode
+# Atlassian Dark Mode (Jira Cloud and Confluence Cloud)
 Dark mode for Jira Cloud and Confluence Cloud
 
 Original Code from: https://github.com/aalvarado/JiraDarkTheme
