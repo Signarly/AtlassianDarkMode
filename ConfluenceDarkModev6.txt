@@ -1,0 +1,842 @@
+/* ==UserStyle==
+@name         Confluence Dark Mode v6
+@namespace    N/A
+@version      6.0.0
+@license      DN
+@author       @Sig
+@preprocessor default
+
+==/UserStyle== */
+@-moz-document regexp(".*.atlassian.net/wiki.*") {
+
+        /*Do not touch this*/
+    div {
+        padding: 0px 0px 0px!important;
+        background-color: #3330!important;
+        color:#cccfd1!important;
+        
+        
+    }
+    
+    /*Do not touch this*/
+
+    /*Transparent UI bug fixes*/
+    ._1reo1wug { background-color: #333!important;}
+    .css-ojw45d [role="tabpanel"] {background-color: #333!important;}
+    .css-10ki349 { background-color: #333!important;}
+    .css-19jltdh {max-height: 688px;background-color: #333!important; padding: 2px 2px 2px;}
+    .css-oyiut7 {background-color: #333!important;}
+    .css-oyiut7 [role="tab"] {padding: 4px 8px!important;}
+    .aui-dialog .dialog-panel-body {background-color: #333!important;}
+    .aui-property-panel {background-color: #333!important;}
+    .dialog-header {background-color: #333!important;}
+    .aui-dialog .dialog-button-panel {background-color: #333!important;}
+    
+    /*Confluence Main*/
+    :root {
+        --ds-background-default: #333;
+        --ds-background-neutral: #222;
+        --ds-background-neutral-bold: #aaa;
+        --ds-background-neutral-hovered: #333;
+        --ds-background-neutral-subtle: #444;
+        --ds-background-neutral-subtle-hovered: #555;
+        --ds-background-neutral-subtle-pressed: #333;
+        --ds-background-selected: #353a44;
+        --ds-background-selected-hovered: #484f5d;
+        --ds-background-accent-yellow-subtlest: #242323;
+        --ds-background-accent-yellow-subtler: #242323;
+        --ds-background-accent-blue-subtlest: #242323;
+        --ds-background-information: #242323;
+        --ds-background-input-pressed: #333 --ds-background-input: #333;
+        --ds-background-input-hovered: #444;
+        --ds-background-accent-gray-subtlest: #117ec6;
+        --ds-background-disabled: #444;
+        --ds-background-subtleNeutral-resting: #111;
+        --ds-background-brand-bold: #117ec6;
+        --ds-background-brand: #333;
+        --ds-background-information-bold: #8ec4fd;
+        --ds-background-success-bold: #b1deb4;
+
+        --ds-surface: #333!important;
+        --ds-surface-raised: #333;
+        --ds-surface-sunken: #222;
+        --ds-surface-overlay: #444;
+
+        --ds-border: #222;
+        --ds-menu-seperator-color: #444;
+
+        --ds-shadow-raised: 0 1px 1px rgba(150, 150, 150, 0.25), 0 0 1px 1px rgba(150, 150, 150, 0.13);
+
+        --ds-text: #cccfd1;
+        --ds-text-subtlest: #aaa;
+        --ds-text-subtle: #bbb;
+        --ds-text-disabled: #aaa;
+        --ds-text-mediumEmphasis: #cccfd1;
+        --ds-text-highEmphasis: #cccfd1;
+        --ds-text-selected: #9494ff;
+        --ds-text-inverse: #333;
+        --ds-text-accent-blue: #6788f9;
+        --ds-text-link-resting: #6788f9;
+
+        --ds-link: #6788f9;
+
+
+        --ds-text-information: #cccfd1;
+        --icon-primary-color: #cccfd1!important;
+        --primary-text-color: #cccfd1!important;
+        --secondary-text-color: #cccfd1!important;
+    }
+
+
+    /* Recent Page*/
+    .css-1ar0hf {
+background-color: #333!important;
+    }
+    ._1g4kalr3>[data-styled-selector="feed.TooltipContainer"] [data-styled-selector="feed.Title"] {
+    color: #d4d6d9;
+}
+    .css-5mekwu {color:#fff!important;}
+    .css-zl64iv {
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        background-color: #333;
+        width: 100%;
+        min-height: calc( 100vh - var(--bannerHeight, 0px) - var(--topNavigationHeight, 0px));
+    }
+    .css-8l2596 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        border-radius: 3px;
+        max-width: 240px;
+        min-width: calc(240px - 240px * var(--homeNavIsCollapsed));
+        background-color: #555;
+        box-shadow: 0px 1px 1px rgba(9, 30, 66, calc(0.25 - 0.25 * var(--homeNavIsCollapsed))), 0px 0px 1px rgba(9, 30, 66, calc(0.31 - 0.31 * var(--homeNavIsCollapsed)));
+    }
+
+    .css-1wzbbe4 {
+        color: #cccfd1!important;
+    }
+    
+    
+    .css-eoeoai p {
+        color: #cccfd1!important;
+    }
+
+    .css-vr4v2s-multiValue a > .labels__multi-value__label {
+        color: #6788f9;
+    }
+    /* Main Page */
+    .css-1jt4w80 {
+        background-color: #333!important;
+    }
+    .css-1vk57ay-control {
+        background-color: #333;
+        border-color: #333;
+        padding: 55px 55px 55px!important;
+       
+    }
+    .css-qrgfm0 {
+        background-color: #333!important;
+        padding-left: 200pt!important;
+        max-width: 1080px;
+    }
+    #com-atlassian-confluence,
+    body {
+        background-color: #333!important;
+        color: #cccfd1!important;
+    }
+    .css-lfcs4t .fabric-text-color-mark {
+        color: #6788f9;
+    }
+    ._1es6vctu>[data-styled-selector="feed.TooltipContainer"] [data-styled-selector="feed.Title"]:visited {
+    color: #cccfd1;
+}
+    ._n2s9alr3>[data-styled-selector="feed.TooltipContainer"] [data-styled-selector="feed.Title"]:hover {
+        color: #cccfd1;
+}
+    .css-1rfiwtz {background-color: #333!important;}
+    .css-175rss9 {
+        position: relative;
+        background-color: #343232;
+    }
+
+    .css-1rn1m6i {
+        color: #fff;
+    }
+    .css-1ud9qgj {
+        color: #fff;
+    }
+
+
+    ._ca0qidpf {
+        background-color: #333!important;
+        padding-left: 2pt!important;
+        color: #333!important;
+    }
+    .css-lfcs4t .pm-table-container>table th, .css-lfcs4t .pm-table-wrapper>table th, .css-lfcs4t .pm-table-sticky-wrapper>table th, .css-lfcs4t .pm-table-container>table td, .css-lfcs4t .pm-table-wrapper>table td, .css-lfcs4t .pm-table-sticky-wrapper>table td {background-color: #333!important;}
+    #content.edit.adg3-editor a, #content.edit.adg3-editor a.blogHeading, #content.edit.adg3-editor a:active, #content.edit.adg3-editor a:focus, #content.edit.adg3-editor a:hover, #content.edit.adg3-editor a:visited, .aui-popup.aui-dialog a, .aui-popup.aui-dialog a.blogHeading, .aui-popup.aui-dialog a:active, .aui-popup.aui-dialog a:focus, .aui-popup.aui-dialog a:hover, .aui-popup.aui-dialog a:visited, .editor-container.adg3-editor a, .editor-container.adg3-editor a.blogHeading, .editor-container.adg3-editor a:active, .editor-container.adg3-editor a:focus, .editor-container.adg3-editor a:hover, .editor-container.adg3-editor a:visited {
+    color: #6788f9;
+}
+    
+    
+    
+    #content-title {color: #fff;}
+    #content-body,
+    element.style {
+
+        background-color: #333!important;
+    }
+    #content-body,
+    body {
+
+        background-color: #333!important;
+    }
+    #full-height-container,
+    element.style {
+       
+        background-color: #333!important;
+    }
+
+    #comments-section-fabric,
+    element.style {
+        background-color: #333!important;
+    }
+
+    #addcomment,
+    element.style {
+        background-color: #333!important;
+    }
+
+
+
+    #likes-and-labels-container,
+    element.style {
+    
+        background-color: #333!important;
+        padding: 20px 20px 20px 20px !important;
+    }
+
+    #header-precursor,
+    element.style {
+        background-color: #444!important;
+        padding-right: 20px!important;
+    }
+
+    #content-header-container,
+    element.style {
+        margin-left: 28px
+    }
+
+    .css-wqjmj {
+        background-color: #222;
+    }
+    #content,
+    element.style {
+        padding-left: 20px!important;
+        background-color: #333!important;
+    }
+
+
+    .css-v3k6mt {
+        background-color: #333!important;
+        padding-right: 35px;
+    }
+    .css-1yxg87n li {
+        color: #cccfd1!important;
+    }
+
+
+    .css-6859h3.e1xiljc53 {
+        background: #444!important;
+    }
+
+    .confluenceTh,
+    .confluenceTd {
+        border: 1px solid #444;
+        background-color: #555!important;
+    }
+    /* I forgot */
+    .css-1tmc6d9 {
+        background-color: #444!important;
+    }
+
+    .css-1l69l9k {
+
+        background-color: #444!important
+    }
+
+    .css-1f7b2t9 {
+        background-image: none;
+        background-size: auto;
+        background-color: #333!important;
+        padding-left: 40px!important;
+    }
+    #title-text,
+    element.style {
+        padding-left: 30pt;
+    }
+
+
+.light-old-ds-theme-mode {
+    color: #cccfd1;
+}
+
+.css-1mos0li {
+    background-color: #333!important;
+    border-bottom: Solid 2px;
+    border-left: Solid 2px;
+    border-right: Solid 2px;
+}
+
+._13xeglyw:invalid,
+._h9ziglyw:required {
+    box-shadow: none;
+    background-color: #555;
+    color: #fff!important;
+}
+._1bsk1osq {
+    padding-bottom: 20px;
+    border-bottom: solid 2px;
+    background-color: #555!important;
+}
+._n3tdidpf {
+    border-bottom: solid 2px;
+}
+    .css-5bl9wx {background-color: #333!important;}
+.css-12iqrvt .sticky-header {
+    background-color: #333!important;
+}
+._n7zl136u {
+    border-bottom: 1px solid #333;
+    background-color: #333!important;
+}
+.css-1kfxbv0 {
+    background-color: #555!important;
+}
+._syaz9sh9 {
+    color: #cccfd1!important;
+    background-color: #333!important;
+}
+#title-text,
+element.style {
+    color: #cccfd1!important;
+}
+
+.css-225860 {
+    background-color: #555!important;
+}
+._bfhku67f {
+    background-color: #444;
+}
+
+/*Main Content Text Color*/
+.css-8qlo3l .wiki-content h1 {
+    font-size: 1.714em;
+    Color: #cccfd1!important;
+    font-weight: normal;
+    line-height: 1.166;
+}
+
+.css-8qlo3l .wiki-content h2 {
+    font-size: 1.43em;
+    Color: #cccfd1!important;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+
+/* Other */
+.css-1fz0h1q {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    text-align: left;
+    overflow: hidden;
+    color: #cccfd1;
+    outline: none;
+
+    display: flex;
+    flex-direction: column;
+    line-height: 1.22;
+    user-select: none;
+}
+
+.css-1gly9cj {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    line-height: 1.22;
+    color: #cccfd1;
+    outline: none;
+    overflow: hidden;
+    text-align: left;
+}
+
+.css-1we84oz {
+    transition: opacity 0.3s ease 0s;
+    opacity: 1;
+  
+    color: #cccfd1;
+    padding-left: 30px;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.css-snhnyn {
+    display: inline-block;
+    color: #cccfd1;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.css-8qlo3l .wiki-content h2 {
+    font-size: 1.43em;
+    Color: #333;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.css-8qlo3l .wiki-content h3 {
+    font-size: 1.142em;
+    Color: #333;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.css-8qlo3l .wiki-content h1 {
+    font-size: 1.714em;
+    Color: #333;
+    font-weight: normal;
+    line-height: 1.166;
+}
+
+.css-8qlo3l .wiki-content h4 {
+    font-size: 1em;
+    Color: #333;
+    line-height: 1.428;
+    font-weight: bold;
+}
+
+.css-8qlo3l .wiki-content h5 {
+    font-size: 0.857em;
+    Color: #333;
+    line-height: 1.333;
+    font-weight: bold;
+}
+
+
+/* Left Panel Changes */
+.css-jwf8r9 {
+    position: relative;
+    max-width: 100%;
+    background-color: #cccfd1;
+    ;
+    width: 500px;
+}
+.css-1e442tc {
+    background-color: #555;
+}
+.css-1e442tc:visited {
+    background-color: #555;
+}
+.css-1e442tc:hover {
+    background-color: #555;
+}
+
+.css-1e442tc:visited {
+    background-color: #555;
+}
+
+.css-vqkxcs:hover {
+    background-color: #555!important;
+}
+.css-vqkxcs:visited {
+    background-color: #555!important;
+}
+
+.css-rof99k:hover {
+    background-color: #555!important;
+}
+
+.css-rof99k:visited {
+    background-color: #555!important;
+}
+
+.css-1yobbmb:hover {
+    background-color: #555!important;
+}
+
+.css-1bilih5 {
+    background-color: #555!important;
+}
+
+.css-1bilih5:visited {
+    background-color: #555!important;
+}
+
+.css-1bilih5:hover {
+    background-color: #555!important;
+}
+
+.css-1bcqjq5 {
+    background-color: #555!important;
+}
+
+.css-17qse2v:visited {
+    background-color: #555!important;
+}
+
+.css-17qse2v:hover {
+    background-color: #555!important;
+}
+
+.css-3jupkk:visited {
+    background-color: #555!important;
+}
+
+.css-3jupkk:hover {
+    background-color: #555!important;
+}
+.css-3jupkk {
+    background-color: #555!important;
+}
+.css-1ujfqym {
+    background-color: #555!important;
+}
+
+.css-yzjxht:visited {
+    background-color: #555!important;
+}
+
+.css-yzjxht:hover {
+    background-color: #555!important;
+}
+
+.css-czbhfz:visited {
+    background-color: #555!important;
+}
+
+.css-czbhfz:hover {
+    background-color: #555!important;
+}
+
+.css-czbhfz {
+    background-color: #555!important;
+}
+
+.css-3omajs:visited {
+    background-color: #555!important;
+}
+
+.css-3omajs:hover {
+    background-color: #555!important;
+}
+
+.css-3omajs {
+    background-color: #555!important;
+}
+.css-13cefwf:visited {
+    background-color: #555!important;
+}
+
+.css-13cefwf:hover {
+    background-color: #555!important;
+}
+.css-8t7o9j {
+    background-color: #555!important;
+}
+.css-8t7o9j:visited {
+    background-color: #555!important;
+}
+
+.css-8t7o9j:hover {
+    background-color: #555!important;
+}
+.css-xxt42k:visited {
+    background-color: #555!important;
+}
+
+.css-xxt42k:hover {
+    background-color: #555!important;
+}
+
+.css-163bfft:visited {
+    background-color: #555!important;
+}
+
+.css-163bfft:hover {
+    background-color: #555!important;
+}
+
+.css-ey6f9y:visited {
+    background-color: #555!important;
+}
+
+.css-ey6f9y:hover {
+    background-color: #555!important;
+}
+.css-1m6pk17:visited {
+    background-color: #555!important;
+}
+
+.css-1m6pk17:hover {
+    background-color: #555!important;
+}
+.css-6yz6kx:visited {
+    background-color: #555!important;
+}
+
+.css-6yz6kx:hover {
+    background-color: #555!important;
+}
+.css-4gyw89:visited {
+    background-color: #555!important;
+}
+
+.css-4gyw89:hover {
+    background-color: #555!important;
+}
+.css-1jy8lc:visited {
+    background-color: #555!important;
+}
+
+.css-1jy8lc:hover {
+    background-color: #555!important;
+}
+.css-awvyvb:visited {
+    background-color: #555!important;
+}
+
+.css-awvyvb:hover {
+    background-color: #555!important;
+}
+.css-17tf61q:visited {
+    background-color: #555!important;
+}
+
+.css-17tf61q:hover {
+    background-color: #555!important;
+}
+.css-1mxaxag:visited {
+    background-color: #555!important;
+}
+
+.css-1mxaxag:hover {
+    background-color: #555!important;
+}
+.css-1mxaxag:visited {
+    background-color: #555!important;
+}
+
+.css-1mxaxag:hover {
+    background-color: #555!important;
+}
+.css-1jy8alc:visited {
+    background-color: #555!important;
+}
+
+.css-1jy8alc:hover {
+    background-color: #555!important;
+}
+.css-ee48h5:visited {
+    background-color: #555!important;
+}
+
+.css-ee48h5:hover {
+    background-color: #555!important;
+}
+.css-nuertc:visited {
+    background-color: #555!important;
+}
+
+.css-nuertc:hover {
+    background-color: #555!important;
+}
+
+.css-1cueekk {
+    color: #cccfd1;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 2px 8px 6px;
+}
+
+._syazalr3 {
+    color: #cccfd1;
+}
+._11q7192b {
+    background: linear-gradient(180deg, #666 35%, #444 0, #333);
+}
+
+a._1bsb1osq._4t3i1ex1._1e0c1txw._4cvr1h6o._1bah1yb4._ca0qidpf._u5f31crf._n3tdidpf._19bv1crf._9oik1r31._1bnxglyw._jf4cnqa1._d0altlke {
+    background-color: #333
+}
+
+.css-bg3st0 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #cccfd1;
+}
+
+.css-1t36gu9 {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 40px;
+    margin: 0px;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    font-size: 14px;
+    outline: 0px;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 3px;
+    color: var(--ds-text-selected, #6788f9;
+    );
+    background-color: #555!important;
+}
+
+.wiki-content a,
+.wiki-content a:link,
+.wiki-content a:visited,
+.wiki-content a:focus,
+.wiki-content a:hover,
+.wiki-content a:active {
+    color: #6788f9;
+}
+
+
+
+._syaz4rde {
+    color: #fff;
+}
+
+.css-nuertc {
+    -webkit-box-align: baseline;
+    align-items: baseline;
+
+    border-width: 0px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: inline-flex;
+    font-size: inherit;
+    font-style: normal;
+    font-family: inherit;
+    font-weight: 500;
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.1s ease-out 0s, box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38) 0s;
+    white-space: nowrap;
+    background: none;
+    cursor: pointer;
+    height: 2.28571em;
+    line-height: 2.28571em;
+    padding: 0px 2px;
+    vertical-align: middle;
+    width: auto;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: #cccfd1 !important;
+}
+
+.css-zaxvqe {
+    background-color: #333!important;
+}
+._kqswstnw:visited {
+    background-color: #3330!important;
+    color: #fff!important;
+}
+._kqswstnw:hover {
+    background-color: #3330!important;
+    color: #fff!important;
+}
+._kqswstnw {
+background-color: #3330!important;
+    color: #fff!important;
+}
+    
+.css-16mghkk {
+    background-color: #333!important;
+    
+}
+.css-1h80e4t:visited,
+.css-1h80e4t:active,
+.css-1h80e4t:focus {
+    text-decoration: none;
+    color: #fff!important;
+    background-color: #333!important;
+}
+
+.css-wxvfrp {
+    background-color: #666;
+}
+
+.css-1g92mbv {
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #666;
+    border-color: #333!important;
+    color: var(--ds-text, #091E42);
+}
+
+.css-116fn09-control {
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #666;
+    border-color: #333!important;
+}
+
+ a,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+    color: #e4dfdf;
+   
+}   
+    
+._bfhkuzct {
+    background-color: #666;
+}
+
+._19pk1wug {
+
+    background-color: #444!important;
+}
+
+.css-8qlo3l .wiki-content h4 {
+
+    Color: #cccfd1 !important;
+}
+
+.css-8qlo3l .wiki-content h3 {
+
+    Color: #cccfd1 !important;
+}
+
+.css-8qlo3l .wiki-content h2 {
+
+    Color: #cccfd1 !important;
+}
+
+.css-8qlo3l .wiki-content h1 {
+
+    Color: #cccfd1 !important;
+}
+
+}
